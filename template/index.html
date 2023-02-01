@@ -14,7 +14,7 @@
         
         <form method="POST" class="row g-3 d-flex justify-content-center my-5">
           <div class="col-auto">
-            <input type="text" class="form-control">
+            <input type="text" class="form-control" name="input_sentence">
           </div>
           <div class="col-auto">
             <button type="submit" class="btn btn-dark mb-3">Predict</button>
@@ -24,8 +24,8 @@
         <div class="row">
           <div class="col-4"></div>
           <div class="col-4 p-5 border border-dark">
-            <p class="mb-3" style="font-weight:600">I am happy!!</p>
-            <h5>Prediction - <span class="border border-warning border-3 p-1">Happiness</span></h5>
+            <p class="mb-3" style="font-weight:600">{{ input }}!</p>
+            <h5>Prediction - <span class="border border-warning border-3 p-1">{{ prediction }}</span></h5>
           </div>
           <div class="col-4"></div>
         </div>
