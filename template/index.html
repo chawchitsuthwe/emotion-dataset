@@ -26,9 +26,11 @@
           <div class="col-4 p-5 border border-dark">
             <p class="mb-3" style="font-weight:600">{{ input }}</p>
             <h5>3 Possible Emotions</h5>
-            {% for pred in prediction %}
+            <ul>
+              {% for pred in prediction %}
               <li>{{ pred }}</li>
-            {% endfor %}
+              {% endfor %}
+            </ul>
           </div>
           <div class="col-4"></div>
         </div>
