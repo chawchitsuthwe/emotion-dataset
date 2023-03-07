@@ -14,7 +14,7 @@
         
         <form method="POST" class="row g-3 d-flex justify-content-center my-5">
           <div class="col-auto">
-            <input type="text" class="form-control" name="input_sentence">
+            <input type="text" class="form-control" name="input_sentence" value="{{input}}">
           </div>
           <div class="col-auto">
             <button type="submit" class="btn btn-dark mb-3">Predict</button>
@@ -25,12 +25,7 @@
           <div class="col-4"></div>
           <div class="col-4 p-5 border border-dark">
             <p class="mb-3" style="font-weight:600">{{ input }}</p>
-            <h5>3 Possible Emotions</h5>
-            <ul>
-              {% for pred in prediction %}
-              <li>{{ pred }}</li>
-              {% endfor %}
-            </ul>
+            <h5>Prediction - {{ prediction }}</h5>
           </div>
           <div class="col-4"></div>
         </div>
